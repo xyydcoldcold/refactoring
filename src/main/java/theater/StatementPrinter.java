@@ -41,8 +41,6 @@ public class StatementPrinter {
 
         for (Performance p : invoice.getPerformances()) {
 
-            int thisAmount = getAmount(p);
-
             // add volume credits
             volumeCredits += Math.max(p.getAudience() - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
 
@@ -55,11 +53,11 @@ public class StatementPrinter {
             result.append(
                     String.format("  %s: %s (%s seats)%n",
                             getPlay(p).getName(),
-                            frmt.format(thisAmount / Constants.PERCENT_FACTOR),
+                            frmt.format(getAmount(p) / Constants.PERCENT_FACTOR),
                             p.getAudience())
             );
 
-            totalAmount += thisAmount;
+            totalAmount += getAmount(p);
         }
 
         result.append(

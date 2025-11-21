@@ -1,2 +1,4 @@
-63c88db (HEAD -> main, origin/main, origin/HEAD) Task 1.1: fix checkstyle issues
+9a906ff Task 2.1 finish refactoring getAmount and helpers
+703fcab Task 1.2: update git log
+63c88db Task 1.1: fix checkstyle issues
 93c1b8c Initial commit
