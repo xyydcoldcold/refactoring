@@ -1,3 +1,5 @@
+ac85b0b Complete Task 2.3 – Extract usd helper
+e2f016a Update log.txt – Task 2.2
 d6ddf8b Finish extracting volume credits – Task 2.2
 7af341f Update log.txt after refactoring – Task 2.1
 9a906ff Task 2.1 finish refactoring getAmount and helpers
